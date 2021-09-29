@@ -1,0 +1,27 @@
+// Define a function.
+  void  main() {
+    
+    Pessoa p = Pessoa("SERGIO");
+    int a = 1;
+    int b = 2;
+        
+    Calculadora calc = new Calculadora();
+    
+    int c = calc.soma(a, b);
+    
+    print("soma $c");
+    
+    print("nome:  ${p.nome}");
+  }
+
+  class Pessoa{
+    String nome;
+    
+    Pessoa(this.nome);
+  }
+
+  class Calculadora{
+      soma( a, b) {
+      return a + b;
+    }
+  }
